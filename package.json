@@ -1,0 +1,33 @@
+{
+  "name": "pine-funcoes-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Estrutura de automação web do Função baseada nos cenários BDD de cases",
+  "type": "module",
+  "engines": { "node": ">=20.19.0" },
+  "scripts": {
+    "test": "node Scripts/run-env.mjs homologacao --project=chrome",
+    "test:homologacao": "node Scripts/run-env.mjs homologacao --project=chrome",
+    "test:chrome": "node Scripts/run-env.mjs homologacao --project=chrome",
+    "test:edge": "node Scripts/run-env.mjs homologacao --project=edge",
+    "test:firefox": "node Scripts/run-env.mjs homologacao --project=firefox",
+    "test:webkit": "node Scripts/run-env.mjs homologacao --project=webkit",
+    "test:all": "node Scripts/run-env.mjs homologacao",
+    "test:list": "node Scripts/run-env.mjs homologacao --project=chrome --list",
+    "test:ui": "node Scripts/run-env.mjs homologacao --project=chrome --ui",
+    "typecheck": "tsc --noEmit",
+    "report": "npm run report:generate && npm run report:open",
+    "report:generate": "allure generate Reports/allure-results -o Reports/allure-report",
+    "report:open": "allure open Reports/allure-report",
+    "report:playwright": "playwright show-report Reports/playwright-report",
+    "report:clear": "node Scripts/clear-reports.mjs"
+  },
+  "dependencies": { "playwright": "^1.51.1" },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.15.3",
+    "allure": "^3.20.1",
+    "allure-playwright": "^3.2.1",
+    "typescript": "^6.0.2"
+  }
+}

@@ -1,0 +1,1418 @@
+[
+  {
+    "id": "BDD-001",
+    "title": "BDD-001 — Acessar a home pelo botão de login",
+    "source": "cases/cases/interface/login-home-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@smoke",
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-002",
+    "title": "BDD-002 — Mover o foco da senha para o botão de login [Enter]",
+    "source": "cases/cases/interface/login-home-01/01-cenarios-bdd.md",
+    "variant": {
+      "tecla": "Enter"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-002",
+    "title": "BDD-002 — Mover o foco da senha para o botão de login [Tab]",
+    "source": "cases/cases/interface/login-home-01/01-cenarios-bdd.md",
+    "variant": {
+      "tecla": "Tab"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-003",
+    "title": "BDD-003 — Acessar a home com Enter no botão de login",
+    "source": "cases/cases/interface/login-home-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-004",
+    "title": "BDD-004 — Exibir a senha preenchida com caracteres mascarados",
+    "source": "cases/cases/interface/login-home-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@regressao",
+      "@positivo",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-005",
+    "title": "BDD-005 — Exibir os 11 módulos na home",
+    "source": "cases/cases/interface/login-home-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@smoke",
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-001",
+    "title": "BDD-COT-001 — Acessar Tabelas Corporativas pela home",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-002",
+    "title": "BDD-COT-002 — Selecionar Tabelas WEB no BackOffice",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-003",
+    "title": "BDD-COT-003 — Acessar a inclusão de cotações pelo menu Operacional",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@smoke",
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-004",
+    "title": "BDD-COT-004 — Acessar o cadastro de um indexador existente",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-005",
+    "title": "BDD-COT-005 — Manter os campos informativos do cadastro sem edição [Código]",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {
+      "campo": "Código"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@negativo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-005",
+    "title": "BDD-COT-005 — Manter os campos informativos do cadastro sem edição [Indexador]",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {
+      "campo": "Indexador"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@negativo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-005",
+    "title": "BDD-COT-005 — Manter os campos informativos do cadastro sem edição [Referência]",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {
+      "campo": "Referência"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@negativo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-005",
+    "title": "BDD-COT-005 — Manter os campos informativos do cadastro sem edição [Dt. Validade]",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {
+      "campo": "Dt. Validade"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@negativo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-005",
+    "title": "BDD-COT-005 — Manter os campos informativos do cadastro sem edição [Dt. Início]",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {
+      "campo": "Dt. Início"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@negativo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-005",
+    "title": "BDD-COT-005 — Manter os campos informativos do cadastro sem edição [Valor Acumulado]",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {
+      "campo": "Valor Acumulado"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@negativo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-005",
+    "title": "BDD-COT-005 — Manter os campos informativos do cadastro sem edição [Usuário]",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {
+      "campo": "Usuário"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@negativo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-006",
+    "title": "BDD-COT-006 — Incluir a cotação do indexador com sucesso",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-007",
+    "title": "BDD-COT-007 — Limpar o código do indexador com Cancelar",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-008",
+    "title": "BDD-COT-008 — Limpar os dados editados no cadastro com Cancelar",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-009",
+    "title": "BDD-COT-009 — Voltar do cadastro para a seleção sem salvar",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-010",
+    "title": "BDD-COT-010 — Voltar da seleção de indexador para a tela anterior",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-COT-011",
+    "title": "BDD-COT-011 — Informar um código de indexador inexistente",
+    "source": "cases/cases/interface/inclusao-cotacoes-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@negativo",
+      "@modulo_tabelas_corporativas",
+      "@funcionalidade_inclusao_cotacoes",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-001",
+    "title": "BDD-WCC-IFRS-001 — Acessar Web Corporate Contábil IFRS pela home",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {},
+    "tags": [
+      "@smoke",
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-002",
+    "title": "BDD-WCC-IFRS-002 — Selecionar o produto no BackOffice [Corporate Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Corporate Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-002",
+    "title": "BDD-WCC-IFRS-002 — Selecionar o produto no BackOffice [Repasse BNDES Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-002",
+    "title": "BDD-WCC-IFRS-002 — Selecionar o produto no BackOffice [Repasse BNDES Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-002",
+    "title": "BDD-WCC-IFRS-002 — Selecionar o produto no BackOffice [Repasse ME Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-002",
+    "title": "BDD-WCC-IFRS-002 — Selecionar o produto no BackOffice [Repasse ME Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-003",
+    "title": "BDD-WCC-IFRS-003 — Realizar abertura contábil para a referência preparada [Corporate Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Corporate Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-003",
+    "title": "BDD-WCC-IFRS-003 — Realizar abertura contábil para a referência preparada [Repasse BNDES Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-003",
+    "title": "BDD-WCC-IFRS-003 — Realizar abertura contábil para a referência preparada [Repasse BNDES Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-003",
+    "title": "BDD-WCC-IFRS-003 — Realizar abertura contábil para a referência preparada [Repasse ME Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-003",
+    "title": "BDD-WCC-IFRS-003 — Realizar abertura contábil para a referência preparada [Repasse ME Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-004",
+    "title": "BDD-WCC-IFRS-004 — Realizar pré-fechamento no dia útil anterior à inicialização [Corporate Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Corporate Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-004",
+    "title": "BDD-WCC-IFRS-004 — Realizar pré-fechamento no dia útil anterior à inicialização [Repasse BNDES Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-004",
+    "title": "BDD-WCC-IFRS-004 — Realizar pré-fechamento no dia útil anterior à inicialização [Repasse BNDES Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-004",
+    "title": "BDD-WCC-IFRS-004 — Realizar pré-fechamento no dia útil anterior à inicialização [Repasse ME Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-004",
+    "title": "BDD-WCC-IFRS-004 — Realizar pré-fechamento no dia útil anterior à inicialização [Repasse ME Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-005",
+    "title": "BDD-WCC-IFRS-005 — Realizar fechamento sem comparação de saldos [Corporate Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Corporate Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-005",
+    "title": "BDD-WCC-IFRS-005 — Realizar fechamento sem comparação de saldos [Repasse BNDES Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-005",
+    "title": "BDD-WCC-IFRS-005 — Realizar fechamento sem comparação de saldos [Repasse BNDES Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-005",
+    "title": "BDD-WCC-IFRS-005 — Realizar fechamento sem comparação de saldos [Repasse ME Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-005",
+    "title": "BDD-WCC-IFRS-005 — Realizar fechamento sem comparação de saldos [Repasse ME Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-006",
+    "title": "BDD-WCC-IFRS-006 — Fechar com comparação de saldos e baixar o arquivo gerado [Corporate Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Corporate Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-006",
+    "title": "BDD-WCC-IFRS-006 — Fechar com comparação de saldos e baixar o arquivo gerado [Repasse BNDES Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-006",
+    "title": "BDD-WCC-IFRS-006 — Fechar com comparação de saldos e baixar o arquivo gerado [Repasse BNDES Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-006",
+    "title": "BDD-WCC-IFRS-006 — Fechar com comparação de saldos e baixar o arquivo gerado [Repasse ME Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-006",
+    "title": "BDD-WCC-IFRS-006 — Fechar com comparação de saldos e baixar o arquivo gerado [Repasse ME Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-007",
+    "title": "BDD-WCC-IFRS-007 — Voltar de Abertura Contábil sem executar a rotina [Corporate Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Corporate Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-007",
+    "title": "BDD-WCC-IFRS-007 — Voltar de Abertura Contábil sem executar a rotina [Repasse BNDES Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-007",
+    "title": "BDD-WCC-IFRS-007 — Voltar de Abertura Contábil sem executar a rotina [Repasse BNDES Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-007",
+    "title": "BDD-WCC-IFRS-007 — Voltar de Abertura Contábil sem executar a rotina [Repasse ME Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-007",
+    "title": "BDD-WCC-IFRS-007 — Voltar de Abertura Contábil sem executar a rotina [Repasse ME Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-008",
+    "title": "BDD-WCC-IFRS-008 — Voltar de Pré-Fechamento Contábil sem executar a rotina [Corporate Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Corporate Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-008",
+    "title": "BDD-WCC-IFRS-008 — Voltar de Pré-Fechamento Contábil sem executar a rotina [Repasse BNDES Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-008",
+    "title": "BDD-WCC-IFRS-008 — Voltar de Pré-Fechamento Contábil sem executar a rotina [Repasse BNDES Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-008",
+    "title": "BDD-WCC-IFRS-008 — Voltar de Pré-Fechamento Contábil sem executar a rotina [Repasse ME Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-008",
+    "title": "BDD-WCC-IFRS-008 — Voltar de Pré-Fechamento Contábil sem executar a rotina [Repasse ME Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-009",
+    "title": "BDD-WCC-IFRS-009 — Voltar de Fechamento Contábil sem executar a rotina [Corporate Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Corporate Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-009",
+    "title": "BDD-WCC-IFRS-009 — Voltar de Fechamento Contábil sem executar a rotina [Repasse BNDES Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-009",
+    "title": "BDD-WCC-IFRS-009 — Voltar de Fechamento Contábil sem executar a rotina [Repasse BNDES Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-009",
+    "title": "BDD-WCC-IFRS-009 — Voltar de Fechamento Contábil sem executar a rotina [Repasse ME Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-009",
+    "title": "BDD-WCC-IFRS-009 — Voltar de Fechamento Contábil sem executar a rotina [Repasse ME Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@alternativo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-010",
+    "title": "BDD-WCC-IFRS-010 — Exportar o log de Abertura Contábil [Corporate Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Corporate Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-010",
+    "title": "BDD-WCC-IFRS-010 — Exportar o log de Abertura Contábil [Repasse BNDES Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-010",
+    "title": "BDD-WCC-IFRS-010 — Exportar o log de Abertura Contábil [Repasse BNDES Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-010",
+    "title": "BDD-WCC-IFRS-010 — Exportar o log de Abertura Contábil [Repasse ME Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-010",
+    "title": "BDD-WCC-IFRS-010 — Exportar o log de Abertura Contábil [Repasse ME Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-011",
+    "title": "BDD-WCC-IFRS-011 — Exportar o log de Pré-Fechamento Contábil [Corporate Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Corporate Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-011",
+    "title": "BDD-WCC-IFRS-011 — Exportar o log de Pré-Fechamento Contábil [Repasse BNDES Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-011",
+    "title": "BDD-WCC-IFRS-011 — Exportar o log de Pré-Fechamento Contábil [Repasse BNDES Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-011",
+    "title": "BDD-WCC-IFRS-011 — Exportar o log de Pré-Fechamento Contábil [Repasse ME Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-011",
+    "title": "BDD-WCC-IFRS-011 — Exportar o log de Pré-Fechamento Contábil [Repasse ME Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-012",
+    "title": "BDD-WCC-IFRS-012 — Exportar o log de Fechamento Contábil [Corporate Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Corporate Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-012",
+    "title": "BDD-WCC-IFRS-012 — Exportar o log de Fechamento Contábil [Repasse BNDES Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-012",
+    "title": "BDD-WCC-IFRS-012 — Exportar o log de Fechamento Contábil [Repasse BNDES Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-012",
+    "title": "BDD-WCC-IFRS-012 — Exportar o log de Fechamento Contábil [Repasse ME Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-012",
+    "title": "BDD-WCC-IFRS-012 — Exportar o log de Fechamento Contábil [Repasse ME Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@media",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-013",
+    "title": "BDD-WCC-IFRS-013 — Manter a última data de pré-fechamento após nova inicialização [Corporate Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Corporate Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-013",
+    "title": "BDD-WCC-IFRS-013 — Manter a última data de pré-fechamento após nova inicialização [Repasse BNDES Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-013",
+    "title": "BDD-WCC-IFRS-013 — Manter a última data de pré-fechamento após nova inicialização [Repasse BNDES Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse BNDES Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-013",
+    "title": "BDD-WCC-IFRS-013 — Manter a última data de pré-fechamento após nova inicialização [Repasse ME Ativo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Ativo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  },
+  {
+    "id": "BDD-WCC-IFRS-013",
+    "title": "BDD-WCC-IFRS-013 — Manter a última data de pré-fechamento após nova inicialização [Repasse ME Passivo]",
+    "source": "cases/cases/interface/web-corporate-contabil-ifrs-01/01-cenarios-bdd.md",
+    "variant": {
+      "produto": "Repasse ME Passivo"
+    },
+    "tags": [
+      "@regressao",
+      "@funcional",
+      "@positivo",
+      "@modulo_web_corporate_contabil_ifrs",
+      "@funcionalidade_fechamento",
+      "@alta",
+      "@automatizar"
+    ]
+  }
+]

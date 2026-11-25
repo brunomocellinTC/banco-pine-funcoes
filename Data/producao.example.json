@@ -1,0 +1,67 @@
+{
+  "baseURL": "<PREENCHER:URL_DO_AMBIENTE>",
+  "loginPath": "<PREENCHER:CAMINHO_LOGIN>",
+  "usuario": "<PREENCHER:USUARIO>",
+  "senha": "<PREENCHER:SENHA>",
+  "perfil": "<PREENCHER:PERFIL_EQUIVALENTE_SUPERVISOR>",
+  "cotacao": {
+    "codigoIndexador": "<PREENCHER:codigoIndexador>",
+    "nomeIndexador": "<PREENCHER:nomeIndexador>",
+    "codigoInexistente": "<PREENCHER:codigoInexistente>",
+    "taxa": "<PREENCHER:taxa>",
+    "tipo": "<PREENCHER:tipo>",
+    "referenciaApresentada": "<PREENCHER:referenciaApresentada>"
+  },
+  "produtos": [
+    {
+      "codigo": "009",
+      "rotuloBackOffice": "Corporate Ativo",
+      "dataInicializacao": "<PREENCHER:dataInicializacao>",
+      "diaUtilAnterior": "<PREENCHER:diaUtilAnterior>",
+      "referenciaAbertura": "<PREENCHER:referenciaAbertura>",
+      "ultimaReferenciaPreFechamento": "<PREENCHER:ultimaReferenciaPreFechamento>",
+      "novaDataInicializacao": "<PREENCHER:novaDataInicializacao>",
+      "identificadorExecucao": "<PREENCHER:identificadorExecucao>"
+    },
+    {
+      "codigo": "015",
+      "rotuloBackOffice": "Repasse BNDES Ativo",
+      "dataInicializacao": "<PREENCHER:dataInicializacao>",
+      "diaUtilAnterior": "<PREENCHER:diaUtilAnterior>",
+      "referenciaAbertura": "<PREENCHER:referenciaAbertura>",
+      "ultimaReferenciaPreFechamento": "<PREENCHER:ultimaReferenciaPreFechamento>",
+      "novaDataInicializacao": "<PREENCHER:novaDataInicializacao>",
+      "identificadorExecucao": "<PREENCHER:identificadorExecucao>"
+    },
+    {
+      "codigo": "016",
+      "rotuloBackOffice": "Repasse BNDES Passivo",
+      "dataInicializacao": "<PREENCHER:dataInicializacao>",
+      "diaUtilAnterior": "<PREENCHER:diaUtilAnterior>",
+      "referenciaAbertura": "<PREENCHER:referenciaAbertura>",
+      "ultimaReferenciaPreFechamento": "<PREENCHER:ultimaReferenciaPreFechamento>",
+      "novaDataInicializacao": "<PREENCHER:novaDataInicializacao>",
+      "identificadorExecucao": "<PREENCHER:identificadorExecucao>"
+    },
+    {
+      "codigo": "017",
+      "rotuloBackOffice": "Repasse ME Ativo",
+      "dataInicializacao": "<PREENCHER:dataInicializacao>",
+      "diaUtilAnterior": "<PREENCHER:diaUtilAnterior>",
+      "referenciaAbertura": "<PREENCHER:referenciaAbertura>",
+      "ultimaReferenciaPreFechamento": "<PREENCHER:ultimaReferenciaPreFechamento>",
+      "novaDataInicializacao": "<PREENCHER:novaDataInicializacao>",
+      "identificadorExecucao": "<PREENCHER:identificadorExecucao>"
+    },
+    {
+      "codigo": "018",
+      "rotuloBackOffice": "Repasse ME Passivo",
+      "dataInicializacao": "<PREENCHER:dataInicializacao>",
+      "diaUtilAnterior": "<PREENCHER:diaUtilAnterior>",
+      "referenciaAbertura": "<PREENCHER:referenciaAbertura>",
+      "ultimaReferenciaPreFechamento": "<PREENCHER:ultimaReferenciaPreFechamento>",
+      "novaDataInicializacao": "<PREENCHER:novaDataInicializacao>",
+      "identificadorExecucao": "<PREENCHER:identificadorExecucao>"
+    }
+  ]
+}

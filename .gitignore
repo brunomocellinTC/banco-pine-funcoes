@@ -1,0 +1,10 @@
+**/node_modules/
+**/Reports/
+**/test-results/
+**/playwright/.auth/
+**/.env
+**/.env.*
+!**/.env.example
+Automacao_web/Data/*.json
+!Automacao_web/Data/*.example.json
+*.log
