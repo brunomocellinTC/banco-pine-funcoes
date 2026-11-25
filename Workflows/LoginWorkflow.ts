@@ -1,12 +1,11 @@
 import { type Page } from '@playwright/test';
 import { LoginActions } from '../PageObjects/LoginPageObject/LoginActions';
-import { LoggedHomeActions } from '../PageObjects/LoggedHomePageObject/LoggedHomeActions';
+import { PortalActions } from '../PageObjects/PortalPageObject/PortalActions';
 import { type EnvironmentData } from '../Scripts/environment';
 
 export async function autenticar(page: Page, data: EnvironmentData) {
-  const login = new LoginActions(page);
-  await login.goto(data.baseURL, data.loginPath);
-  await login.preencherCredenciais(data.usuario, data.senha);
+  const login = new LoginActions(page, data);
+  await login.abrir();
   await login.entrar();
-  await new LoggedHomeActions(page).validarHome();
+  await new PortalActions(page).validarHome(data.usuario);
 }

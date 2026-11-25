@@ -2,10 +2,13 @@
   "name": "pine-funcoes-web",
   "version": "1.0.0",
   "private": true,
-  "description": "Estrutura de automação web do Função baseada nos cenários BDD de cases",
+  "description": "Base Playwright para login e cadastro de proposta no Fun??o",
   "type": "module",
-  "engines": { "node": ">=20.19.0" },
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "scripts": {
+    "test:login:visual": "node Scripts/run-login-visual.mjs",
     "test": "node Scripts/run-env.mjs homologacao --project=chrome",
     "test:homologacao": "node Scripts/run-env.mjs homologacao --project=chrome",
     "test:chrome": "node Scripts/run-env.mjs homologacao --project=chrome",
@@ -20,9 +23,13 @@
     "report:generate": "allure generate Reports/allure-results -o Reports/allure-report",
     "report:open": "allure open Reports/allure-report",
     "report:playwright": "playwright show-report Reports/playwright-report",
-    "report:clear": "node Scripts/clear-reports.mjs"
+    "report:clear": "node Scripts/clear-reports.mjs",
+    "test:login": "node Scripts/run-env.mjs homologacao --project=chrome --grep @login",
+    "test:proposta": "node Scripts/run-env.mjs homologacao --project=chrome --grep @proposta"
   },
-  "dependencies": { "playwright": "^1.51.1" },
+  "dependencies": {
+    "playwright": "^1.51.1"
+  },
   "devDependencies": {
     "@playwright/test": "^1.51.1",
     "@types/node": "^22.15.3",

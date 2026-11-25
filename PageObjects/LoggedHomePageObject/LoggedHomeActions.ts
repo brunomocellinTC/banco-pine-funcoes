@@ -1,17 +1,17 @@
 import { expect, type Page } from '@playwright/test';
-import { element } from '../../Scripts/utils';
-import { LoggedHomeElementsMap as map, modulosEsperados } from './LoggedHomeElementsMap';
+import { LoggedHomeElementsMap as map } from './LoggedHomeElementsMap';
 
 export class LoggedHomeActions {
   constructor(private readonly page: Page) {}
-  async validarHome() { await expect(element(this.page, map.home)).toBeVisible(); }
-  async validarModulos() {
-    const modulos = element(this.page, map.modulos);
-    await expect(modulos).toHaveCount(modulosEsperados.length);
-    for (const nome of modulosEsperados) {
-      await expect(modulos.filter({ hasText: new RegExp(`^${nome}$`) })).toBeVisible();
-    }
+
+  async validarHome() {
+    await expect(this.page.locator(map.sair)).toBeVisible();
+    await expect(this.page.locator(map.cadastroProposta)).toBeAttached();
   }
-  async abrirTabelasCorporativas() { await element(this.page, map.tabelasCorporativas).click(); }
-  async abrirContabilIFRS() { await element(this.page, map.contabilIFRS).click(); }
+
+  async abrirCadastroProposta() {
+    await this.page.getByRole('button', { name: 'Proposta', exact: true }).click();
+    await this.page.locator(map.cadastroProposta).click();
+    await expect(this.page).toHaveURL(/\/MenuWeb\/Cadastro\/Proposta\/MPCDPROP\/UI\.MPCDPROP\.aspx\?seqdeci=1(?:&|$)/);
+  }
 }

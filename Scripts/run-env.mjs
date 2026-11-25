@@ -3,7 +3,7 @@ import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 
 const [environment = 'homologacao', ...args] = process.argv.slice(2);
-if (!['homologacao', 'producao'].includes(environment)) {
+if (environment !== 'homologacao') {
   throw new Error('Ambiente inválido. Use homologacao ou producao.');
 }
 const require = createRequire(import.meta.url);

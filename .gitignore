@@ -5,6 +5,8 @@
 **/.env
 **/.env.*
 !**/.env.example
-Automacao_web/Data/*.json
-!Automacao_web/Data/*.example.json
+Data/*.json
+!Data/*.example.json
 *.log
+
+*.har
