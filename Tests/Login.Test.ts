@@ -1,27 +1,28 @@
 import { expect, test } from '@playwright/test';
-import { getEnvironmentData } from '../Scripts/environment';
-import { autenticar, autenticarManualmente, conferirTela, loginConfigurado } from '../Scripts/Login';
-import { HomePage } from '../PageObjects/HomePage';
+import { getEnvironmentData, isPlaceholder } from '../Scripts/environment';
+import { LoginActions } from '../PageObjects/Login/LoginActions';
+import { LoginObjects } from '../PageObjects/Login/LoginObjects';
+import { HomeObjects } from '../PageObjects/Home/HomeObjects';
 
 const data = getEnvironmentData();
-const manual = process.env.FUNCAO_LOGIN_MANUAL === '1';
 
 test.describe('Login', () => {
-  test.skip(!manual && !loginConfigurado(data), 'Configure os seletores reais ou use npm run test:login:visual.');
+  test.skip(
+    [data.login.usuario, data.login.senha, ...Object.values(LoginObjects)].some(isPlaceholder),
+    'Preencha os seletores de LoginObjects e as credenciais do ambiente.',
+  );
 
   test('Acessar a home do portal Função', { tag: ['@login', '@smoke'] }, async ({ page }) => {
-    if (manual) await autenticarManualmente(page, data);
-    else await autenticar(page, data);
+    const login = new LoginActions(page);
+    await login.abrirLogin(data.login.path);
+    await login.preencherUsuario(data.login.usuario);
+    await login.preencherSenha(data.login.senha);
+    await login.clicarOk();
 
-    await expect(page).toHaveURL(/\/FI\.AC\.GUI\.FIMENU\.aspx(?:\?|$)/i);
-    await expect(page.locator(HomePage.usuario)).toBeVisible();
-    await expect(page.locator(HomePage.usuario)).toHaveText(/\S+/);
-    if (data.usuario) {
-      await expect(page.locator(HomePage.usuario)).toHaveText(data.usuario, { ignoreCase: true });
-    }
-    await expect(page.locator(HomePage.proposta)).toBeVisible();
-    await expect(page.locator(HomePage.proposta)).toHaveText('Proposta');
-
-    if (manual) await conferirTela(page);
+    await expect(page).toHaveURL(url => url.pathname.toLowerCase() === data.home.path.toLowerCase());
+    await expect(page.locator(HomeObjects.usuario)).toBeVisible();
+    await expect(page.locator(HomeObjects.usuario)).toHaveText(data.login.usuario, { ignoreCase: true });
+    await expect(page.locator(HomeObjects.proposta)).toBeVisible();
+    await expect(page.locator(HomeObjects.proposta)).toHaveText('Proposta');
   });
 });

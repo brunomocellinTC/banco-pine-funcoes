@@ -3,8 +3,8 @@ import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 
 const [environment = 'homologacao', ...args] = process.argv.slice(2);
-if (environment !== 'homologacao') {
-  throw new Error('Ambiente inválido. Use homologacao ou producao.');
+if (!/^[a-z0-9]+(?:[-_][a-z0-9]+)*$/i.test(environment)) {
+  throw new Error('Nome de ambiente inválido. Use letras, números, hífen ou sublinhado.');
 }
 const require = createRequire(import.meta.url);
 const result = spawnSync(process.execPath, [require.resolve('@playwright/test/cli'), 'test', ...args], {
