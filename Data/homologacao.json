@@ -1,0 +1,12 @@
+{
+  "baseURL": "http://w19pnhhfcatc01.pine.com.br",
+  "login": {
+    "path": "/login/AC.UI.LOGIN.aspx",
+    "usuario": "ext.bmocellin",
+    "senha": "@Bp26842/10*"
+  },
+  "home": {
+    "path": "/FI.AC.GUI.FIMENU.aspx",
+    "dropdown2": "a"
+  }
+}
