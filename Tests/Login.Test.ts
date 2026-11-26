@@ -14,7 +14,7 @@ test.describe('Login', () => {
 
   test('Acessar a home do portal Função', { tag: ['@login', '@smoke'] }, async ({ page }) => {
     const login = new LoginActions(page);
-    await login.abrirLogin(data.login.path);
+    await login.abrirLogin(data);
     await login.preencherUsuario(data.login.usuario);
     await login.preencherSenha(data.login.senha);
     await login.clicarOk();

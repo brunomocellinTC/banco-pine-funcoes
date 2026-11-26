@@ -1,12 +1,16 @@
 import { type Page } from '@playwright/test';
 import { LoginObjects } from './LoginObjects';
-import { requireConfigured } from '../../Scripts/environment';
+import { requireConfigured, type EnvironmentData } from '../../Scripts/environment';
 
 export class LoginActions {
   constructor(private readonly page: Page) {}
 
-  async abrirLogin(path: string) {
-    await this.page.goto(requireConfigured(path, 'login.path'));
+  async abrirLogin(data: EnvironmentData) {
+    const url = new URL(
+      requireConfigured(data.login.path, 'login.path'),
+      requireConfigured(data.baseURL, 'baseURL'),
+    );
+    await this.page.goto(url.href);
   }
 
   async preencherUsuario(usuario: string) {
