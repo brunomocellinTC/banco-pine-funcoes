@@ -200,16 +200,6 @@ Tipos de Baixa: [TipoBaixa]
 # 🖥️ Realizar Pré-Fechamento
 
 
-🖥️ Web
-👆 Click
-📝 Form/Escrever
-👀 Conferir
-⚠️ Info
-🚀 Abrir
-⬇️ Dropdown
-🌐 Página/Diretório
-📦 Modal
-
 ### [↩️ Voltar](#índice)
 
 ---
@@ -228,17 +218,63 @@ Tipos de Baixa: [TipoBaixa]
 
 # 🖥️ Obter Relatório 3040
 
+Após o sistema ter sido Pré-Fechado, Fechado e Enviado a Carga Bacen, é possível realizar a emissão de Relatórios.
+
+Gera do Mês
+
+🌐 Home > 👆 Web Bacen IFRS
+🌐 > ⬇️ Integrações > ⬇️ Geração de Informações de Risco - 3040 > 👆 Gerar Informação
+🌐 Geração do Documento de Risco de Crédito - 3040:
+- 📝 Data de Referência: = [UltimoDiaMes]
+- 👆 Empresa: > 📝 001 > 👆 Pesquisar > 👆 001
+- 👆 Produto: > 📝 009 > 👆 Pesquisar > 👆 009
+- 👆 Confirmar
+- ⚠️ Requisição para geração do arquivo 3040 realizada com sucesso! > 👆 Ok
+- 👀 Status agora é "Trabalhando" no rodapé
+
 ### [↩️ Voltar](#índice)
 
 ---
 
 # 🖥️ Obter Relatório 3044
 
+Após o sistema ter sido Pré-Fechado, Fechado e Enviado a Carga Bacen, é possível realizar a emissão de Relatórios.
+
+Gera da Semana Anterior, já da a Data Inicial em relação a Carga Bacen enviada.
+
+🌐 Home > 👆 Web Bacen IFRS
+🌐 > ⬇️ Integrações > ⬇️ Geração de Documento - 3044 > 👆 Gerar Informação
+🌐 Geração do Documento 3044 - Dados de Eventos em Operações de Crédito:
+- 📝 Data Final: = [+6 Dias em relação a Inicial]
+- 👆 Empresa: > 📝 001 > 👆 Pesquisar > 👆 001
+- 👆 Produto: > 📝 009 > 👆 Pesquisar > 👆 009
+- 👆 Confirmar
+- ⚠️ *Requisição para geração do arquivo 3044 realizada com sucesso! > 👆 Ok
+- 👀 Status agora é "Trabalhando" no rodapé
+
+> ⚠️ Não existe carga Bacen para as datas: (03/06/2026), (05/06/2026), (08/06/2026) - Produto: 009 e Empresa: 001.
+Ao tentar uma data sem Carga Bacen
+
 ### [↩️ Voltar](#índice)
 
 ---
 
 # 🖥️ Obter Relatório 3050
+
+Após o sistema ter sido Pré-Fechado, Fechado e Enviado a Carga Bacen, é possível realizar a emissão de Relatórios.
+
+Gera da Semana. Apenas Dias Úteis
+
+🌐 Home > 👆 Web Bacen IFRS
+🌐 > ⬇️ Integrações > ⬇️ Geração de Documento 3050 - Estatísticas de Crédito e Arrendamento > 👆 Gerar Informação
+🌐 Informe de Crédito e Arrendamento Mercantil Doc. 3050 ao BACEN:
+- 📝 Dt. Início Referência: = [aDefinir]
+- 📝 Dt. Fim Referência: = [aDefinir]
+- 👆 Empresa: > 📝 001 > 👆 Pesquisar > 👆 001
+- 👆 Produto: > 📝 009 > 👆 Pesquisar > 👆 009
+- 👆 Confirmar
+- ⚠️ RRequisição para processamento da Geração do Documento 3050 realizada com sucesso! > 👆 Ok
+- 👀 Status agora é "Trabalhando" no rodapé
 
 ### [↩️ Voltar](#índice)
 
