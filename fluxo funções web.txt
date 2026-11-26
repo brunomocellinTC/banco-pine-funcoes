@@ -1,0 +1,51 @@
+1 inicialização (CMD)
+
+> Comandos para Função
+
+deletar log de erro sempre antes
+
+pre fechamento D-1
+
+checar fechamento oe pre fechamento D-1
+
+Carga Bacen
+
+Entre inicialização e Fechamento, tem os processo do dia
+
+Abre e cria a Proposta, depois do Fechamento, faz Carga Bacen, processamento, carga bacen, processar, escolhe os produtos, não mandar Antecipação de Recebíveis,
+
+Depois da Carga, Integração, 3044, gera informação da semana anterior, já da a data inicial em relação a carga, procura o diretório dentro da Maquina Virtual 
+
+3040 ,Geração de Informações de Risco de Crédito, puxa do mês, pega o ultimo dia do mês, empresa 001, produto 000, gera report em outro diretório tmb, muda pra 'Trabalhando'
+
+3050, semanal, Informe de Credito e arrendamento mercantil, sempre só os dias uteis, empresa 001, produto 000, sem checks e filtros, confirmar
+
+da pra confirmar a a data de inicialização no header dentro de Tabelas 
+
+> Propostas, cadastro de proposta, 50, , confirmar, abre um form, 51, da pra pesquisar por cliente,  valor da operação, 1KK, Confirmar, Porte da Empresa sempre Médio, tipo de calculo 51, Data base da inicialização, qtd de parcelas 12, prz vecntimento 32 dias, 
+
+não da pra dar baixa em proposta no mesmo dia de cadastro, só no próximo
+
+index/moeda 01, precisa validar o fluo de parcelas, validar fluxo de parcelas, confirmar, confirmar, colocar cocar o numer da operação como numero da poposta, confirma, confirma, confirma, cod banco agencia conta, ultima 137, incluir, confirmar, aprova, , fechar, 
+
+> Consultar , esteira, Aprovação Consulta de proposta, , valido estando Integrado, já esta no BackOffice, 
+
+se clicar no próxima atividade, segue ate o final do cadastro, voltar
+
+Dar baixa na Proposta, BackOffice, Corporate Ativo, Lançamento, baixa de parcelas, tipo de baixa, normal, cod financeiro 001 (no link tem as opções para escolher), nro operação (mesmo da proposta), parc 001, dt liquid data inicialização, recebimento 00001, vlr pago valor exato, calcular
+
+baixa normal, se paga maior ou menor, acata e lança juros ou desconto e a parcela continua em aberto
+com desconto sem diferença, gera desconto sem diferença na operação, sem juros
+com desconto com diferença, gera desconto mas fica com saldo para pagar na parcela
+baixa antecipada co mdesconte de rap, desconto no rap da parcela
+
+confirmar e ele da a baixa
+
+fechamento e prefechamento tem que ser d-1
+
+pra inicializar precisa ler uma taxai diaria monetaria do dolar,
+
+> inicializar taxas 
+
+tabelas corporativas, tabelas web, operacional, cotações, incluir, cod indexador 11, confirmar, taxa indice,  pega do bacen,  confirmar, colocando denovo, refazer da pra consultar a data, ele pega do ultimo fechamento contabil, sempre inclui mais um dia de cotação.
+

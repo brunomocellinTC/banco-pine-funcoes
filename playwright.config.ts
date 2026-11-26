@@ -1,8 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 import { getEnvironmentData, requireConfigured } from './Scripts/environment';
-
+ 
 const data = getEnvironmentData();
-
+ 
 export default defineConfig({
   testDir: './Tests',
   testMatch: 'Login.Test.ts',
@@ -22,6 +22,19 @@ export default defineConfig({
     video: 'off',
   },
   projects: [
-    { name: 'edge', use: { ...devices['Desktop Edge'], channel: 'msedge' } },
+    {
+      name: 'edge',
+      use: {
+        ...devices['Desktop Edge'],
+        channel: 'msedge',
+        launchOptions: {
+          // Ajuste da sessão de teste para o sistema interno que usa HTTP.
+          args: [
+            '--disable-features=HttpsUpgrades,HttpsFirstModeIncognito,HttpsFirstBalancedModeAutoEnable',
+          ],
+        },
+      },
+    },
   ],
 });
+ 

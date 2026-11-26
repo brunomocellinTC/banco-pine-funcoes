@@ -3,7 +3,7 @@ import { LoginObjects } from './LoginObjects';
 import { requireConfigured, type EnvironmentData } from '../../Scripts/environment';
 
 export class LoginActions {
-  constructor(private readonly page: Page) {}
+  constructor(private readonly page: Page) { }
 
   async abrirLogin(data: EnvironmentData) {
     const url = new URL(
