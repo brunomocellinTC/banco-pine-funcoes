@@ -2,11 +2,11 @@
   {
     "id": "login",
     "status": "aguarda seletores e credenciais",
-    "descricao": "Login e acesso ao m?dulo Proposta Ativo WEB"
+    "descricao": "Login e acesso à home do portal"
   },
   {
     "id": "proposta",
     "status": "aguarda captura completa",
-    "descricao": "Cadastro com os valores finais e confirma??o da grava??o"
+    "descricao": "Cadastro com os valores finais e confirmação da gravação"
   }
 ]

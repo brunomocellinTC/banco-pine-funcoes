@@ -2,6 +2,26 @@
 
 Base Playwright focada em login e cadastro de uma proposta. Documentos de cenários futuros continuam em cases/.
 
+## Organização
+
+```text
+PageObjects/
+  LoginPage.ts       seletores do login
+  HomePage.ts        seletores da home do portal
+  PropostaPage.ts    seletores do módulo de propostas
+Scripts/
+  Login.ts          abrir login e autenticar
+  Proposta.ts       fluxo de cadastro (pendente)
+  environment.ts    leitura dos dados do ambiente
+Tests/
+  Login.Test.ts      cenário de login e validações da home
+  Proposta.Test.ts   cenário de cadastro (pendente)
+Data/
+  homologacao.example.json
+```
+
+Os testes chamam os fluxos de Scripts e fazem as asserções. Scripts usa os seletores de PageObjects para preencher e clicar. PageObjects contém apenas seletores; Data contém URL e credenciais. Não há mais uma camada Workflows nem classes Actions.
+
 ## Primeiro teste visual
 
 O segundo HAR mostra a home do portal, sem porta 8087, com o usuário autenticado e o link Proposta. Ainda não contém o formulário de login nem o envio das credenciais. Este primeiro teste usa login manual e valida automaticamente a home.
@@ -14,6 +34,14 @@ npm run test:login:visual
 ```
 
 O comando abre o Chromium e o Playwright Inspector, sem limite de tempo para a conferência manual.
+
+Se o download do Chromium falhar por certificado, use o Edge já instalado:
+
+```powershell
+npm run test:login:visual -- --project=edge
+```
+
+Isso dispensa o download do Chromium. Um certificado expirado durante o download exige conferir a data do computador e a cadeia de certificados da conexão com a TI.
 
 1. No navegador, faça o login normalmente e aguarde a home do portal. Não entre no módulo Proposta ainda.
 2. No Inspector, clique em Resume (ícone de continuar). O teste valida a URL FI.AC.GUI.FIMENU.aspx, um usuário identificado e o link Proposta visível.
@@ -35,7 +63,7 @@ npm run test:list
 npm run test:login -- --headed
 ```
 
-Copie o exemplo apenas se o arquivo local ainda não existir. Para o login automático, configure usuario, senha e os seletores reais em login.usuario, login.senha e login.entrar. Credenciais também podem vir de FUNCAO_USUARIO e FUNCAO_SENHA. Enquanto faltar configuração, o teste automático é ignorado.
+Copie o exemplo apenas se o arquivo local ainda não existir. Para o login automático, configure usuario e senha em Data/homologacao.json e os seletores reais em PageObjects/LoginPage.ts. Se já tiver um JSON com o objeto login, ele pode ser removido: os seletores agora ficam no PageObject. Credenciais também podem vir de FUNCAO_USUARIO e FUNCAO_SENHA. Enquanto faltar configuração, o teste automático é ignorado.
 
 JSON local com credenciais e arquivos HAR são ignorados pelo Git. Sessões e tokens dos HARs não são reutilizados.
 

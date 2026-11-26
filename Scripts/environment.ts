@@ -5,7 +5,6 @@ export type EnvironmentData = {
   loginPath: string;
   usuario: string;
   senha: string;
-  login: { usuario: string; senha: string; entrar: string };
 };
 
 export function isPlaceholder(value: string): boolean {
@@ -13,7 +12,7 @@ export function isPlaceholder(value: string): boolean {
 }
 
 export function requireConfigured(value: string, name: string): string {
-  if (isPlaceholder(value)) throw new Error('Configure ' + name + ' em Data/homologacao.json.');
+  if (isPlaceholder(value)) throw new Error('Configure ' + name + ' antes de executar.');
   return value;
 }
 
@@ -26,9 +25,4 @@ export function getEnvironmentData(): EnvironmentData {
   data.usuario = process.env.FUNCAO_USUARIO ?? data.usuario;
   data.senha = process.env.FUNCAO_SENHA ?? data.senha;
   return data;
-}
-
-export function loginConfigurado(data: EnvironmentData): boolean {
-  return [data.baseURL, data.loginPath, data.usuario, data.senha,
-    data.login?.usuario, data.login?.senha, data.login?.entrar].every(value => !isPlaceholder(value));
 }
