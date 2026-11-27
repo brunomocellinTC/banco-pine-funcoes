@@ -49,3 +49,7 @@ pra inicializar precisa ler uma taxai diaria monetaria do dolar,
 
 tabelas corporativas, tabelas web, operacional, cotações, incluir, cod indexador 11, confirmar, taxa indice,  pega do bacen,  confirmar, colocando denovo, refazer da pra consultar a data, ele pega do ultimo fechamento contabil, sempre inclui mais um dia de cotação.
 
+- Consultar uma baixa de Proposta
+- Caso inicialize o Sistema sem Taxa Iniciada, acusa erro e indica a Taxa que precisa Iniciar
+ 
+prefechamento deve ser dia a dia, o anterior deve estar feito
